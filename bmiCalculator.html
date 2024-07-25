@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <!-- BMI -->
+    <form action="/bmicalculator" method="post">
+      <input
+        type="text"
+        name="weight"
+        placeholder="weight in kg (e.g.: 39.5)"
+      />
+      <input
+        type="text"
+        name="height"
+        placeholder="height in metres (e.g.: 1.61)"
+      />
+      <button type="submit">Calculate BMI</button>
+    </form>
+
+    <div class="space"></div>
+
+    <!-- Calc -->
+    <form action="/" method="post">
+      <input type="text" name="num1" placeholder="first number" />
+      <input type="text" name="num2" placeholder="second number" />
+      <div class="operation-container">
+        <select name="operation">
+          <option value="+" selected>Addition (+)</option>
+          <option value="-">Subtraction (-)</option>
+          <option value="*">Multiplication (*)</option>
+          <option value="/">Division (/)</option>
+        </select>
+        <button type="submit" name="submit">Calculate</button>
+      </div>
+    </form>
+  </body>
+</html>
