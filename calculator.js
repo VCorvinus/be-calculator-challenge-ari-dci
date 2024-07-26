@@ -96,7 +96,7 @@ app.post("/bmicalculator", (req, res) => {
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>BMI Calculator Result</title>
-      <link rel="stylesheet" href="res.css" />
+      <link rel="stylesheet" href="/res.css" />
     </head>
     <body>
       <div id="resultContainer" class="result">${feedback}</div>
