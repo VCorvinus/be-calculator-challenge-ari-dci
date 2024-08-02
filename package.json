@@ -1,0 +1,21 @@
+{
+  "name": "be-calculator-challenge-ari-dci",
+  "version": "1.0.0",
+  "description": "Was playing around with the styling, making sure it'll hurt your eyes. \r Gonna go to bed now. \r 'night.",
+  "main": "calculator.js",
+  "scripts": {
+    "start": "node calculator.js & opn http://localhost:666",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "opn-cli": "^4.1.0"
+  }
+}
