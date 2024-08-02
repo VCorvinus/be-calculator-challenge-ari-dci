@@ -10,7 +10,8 @@ const app = express();
 const path = require("path");
 // use 2 parse data
 
-app.use(express.static(path.join(__dirname)));
+/* app.use(express.static(path.join(__dirname))); */
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // def route hand
@@ -96,7 +97,7 @@ app.post("/bmicalculator", (req, res) => {
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>BMI Calculator Result</title>
-      <link rel="stylesheet" href="/res.css" />
+      <link rel="stylesheet" href="css/res.css" />
     </head>
     <body>
       <div id="resultContainer" class="result">${feedback}</div>
@@ -140,7 +141,7 @@ app.post("/", (req, res) => {
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Calculator Result</title>
-      <link rel="stylesheet" href="res.css" />
+      <link rel="stylesheet" href="css/res.css" />
     </head>
     <body>
       <div id="resultContainer" class="result">The result of the calculation is: ${result}</div>

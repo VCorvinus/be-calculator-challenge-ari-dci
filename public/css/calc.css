@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(255, 0, 175), #04fff7);
+}
+
+form {
+  background: linear-gradient(to bottom, #ffc404, rgb(0, 255, 0));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(125, 0, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space {
+  margin-right: 20px;
+}
+
+input[type="text"] {
+  margin: 5px 0;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: rgb(30, 0, 255);
+  color: rgb(255, 0, 175);
+}
+
+input[type="text"]::placeholder {
+  color: #04fff7;
+}
+
+input[type="text"]:focus {
+  background-color: rgb(30, 0, 255);
+  color: rgb(255, 0, 175);
+  outline: none;
+  border-color: rgb(255, 0, 175);
+}
+
+select {
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  width: auto;
+  height: 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  color: rgb(0, 94, 255);
+  background: linear-gradient(to bottom, rgb(125, 0, 255), #ffc404);
+  font-weight: bold;
+}
+
+select:focus {
+  outline: none;
+  background-color: rgb(30, 0, 255);
+  color: rgb(255, 0, 175);
+  border-color: rgb(255, 0, 175);
+}
+select option {
+  outline: none;
+  background-color: #ffc404;
+}
+
+button {
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  width: auto;
+  height: 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: rgb(125, 0, 255);
+  color: #04fff7;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffa200;
+}
